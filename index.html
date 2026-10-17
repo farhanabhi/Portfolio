@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Farhan M Hameed — AI &amp; Systems Architecture</title>
-<meta name="description" content="Farhan M Hameed — AI &amp; Data Science engineer building interpretable ML systems, autonomous middleware, and production-grade data architectures.">
+<meta name="description" content="Farhan M Hameed — AI &amp; Data Science engineer building interpretable ML systems, zero-trust AI gateways, autonomous middleware, and production-grade data architectures.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -191,7 +191,6 @@
     overflow: hidden;
     transition: transform 0.45s var(--ease), border-color 0.45s var(--ease), box-shadow 0.45s var(--ease);
   }
-  /* Specular top edge highlight */
   .spotlight-card::before {
     content: '';
     position: absolute;
@@ -201,7 +200,6 @@
     z-index: 2;
     pointer-events: none;
   }
-  /* Dynamic mouse-following radial glow */
   .spotlight-card::after {
     content: '';
     position: absolute;
@@ -414,7 +412,7 @@
 
   .hero-sub {
     margin-top: 32px;
-    max-width: 620px;
+    max-width: 640px;
     font-size: 17.5px;
     color: var(--text-2);
     line-height: 1.75;
@@ -706,6 +704,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
   }
   .badge-live {
     display: inline-flex;
@@ -748,7 +747,6 @@
     width: 100%;
     gap: 12px;
     margin-bottom: 14px;
-    group: title;
   }
   .project-title {
     font-size: 22px;
@@ -1027,10 +1025,10 @@
       </div>
       <h1>
         <span class="line"><span>AI &amp; <em class="serif-italic">Data Science</em> Architecture</span></span>
-        <span class="line"><span>Interpretable ML · Autonomous Agents</span></span>
+        <span class="line"><span>Interpretable ML · Zero-Trust AI</span></span>
         <span class="line"><span>Engineered for Production Proof.</span></span>
       </h1>
-      <p class="hero-sub">I architect and ship <strong>interpretable machine learning systems</strong> and <strong>autonomous backend pipelines</strong> — from Temporal–Causal Graph Attention Networks for threat detection to LLM-orchestrated cloud middleware and counterfactual decision engines.</p>
+      <p class="hero-sub">I architect and ship <strong>interpretable machine learning systems</strong>, <strong>zero-trust AI security gateways</strong>, and <strong>autonomous backend pipelines</strong> — from Temporal–Causal Graph Attention Networks for threat detection to LLM-orchestrated cloud middleware and counterfactual decision engines.</p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary magnetic">Explore Live Systems</a>
         <div class="contact-menu">
@@ -1053,7 +1051,7 @@
           <span>Karunya Institute (2022–2026)</span>
         </div>
         <div class="hero-meta-item">
-          <strong>9 <em>Systems</em></strong>
+          <strong>10 <em>Systems</em></strong>
           <span>Architected &amp; Shipped</span>
         </div>
         <div class="hero-meta-item">
@@ -1081,8 +1079,8 @@
       <div class="bento">
         <div class="bento-card bento-about spotlight-card">
           <div>
-            <p>I am an <strong>Artificial Intelligence &amp; Data Science</strong> engineering graduate from Karunya Institute of Technology and Sciences, currently serving as a <strong>Systems Engineer Trainee at Infosys</strong> (Mysore Campus). My work sits at the intersection of applied machine learning and resilient systems engineering — graph neural networks for anomaly detection, LLM-powered cloud middleware, and asynchronous data pipelines.</p>
-            <p>I treat explainability as a first-class requirement: a model that cannot prove its causal reasoning or prescribe an actionable intervention isn't ready for production. Python, FastAPI, PyTorch, and SQL are my primary instruments.</p>
+            <p>I am an <strong>Artificial Intelligence &amp; Data Science</strong> engineering graduate from Karunya Institute of Technology and Sciences, currently serving as a <strong>Systems Engineer Trainee at Infosys</strong> (Mysore Campus). My work sits at the intersection of applied machine learning, AI security, and resilient systems engineering — graph neural networks for anomaly detection, zero-trust LLM gateways, and asynchronous data pipelines.</p>
+            <p>I treat explainability and security as first-class requirements: a model that cannot prove its causal reasoning or a pipeline that leaks sensitive payloads isn't ready for production. Python, FastAPI, PyTorch, and SQL are my primary instruments.</p>
           </div>
           <div class="bento-signature">
             <span>VERIFIABLE ARCHITECTURE</span>
@@ -1113,7 +1111,7 @@
           <div class="eyebrow">02 / Selected Deployments</div>
           <h2>Production systems, <em>not scripts.</em></h2>
         </div>
-        <span class="section-index">09 VERIFIED BUILDS</span>
+        <span class="section-index">10 VERIFIED BUILDS</span>
       </div>
 
       <div class="projects-grid">
@@ -1143,11 +1141,37 @@
           </div>
         </article>
 
-        <!-- 02: LIVE DEPLOYMENT - LEGACY TO CLOUD MIDDLEWARE -->
+        <!-- 02: LIVE DEPLOYMENT - ZERO-TRUST AI GATEWAY -->
         <article class="project-card spotlight-card">
           <div>
             <div class="project-meta-row">
-              <span class="project-index">SYS // 02 — CLOUD INFRASTRUCTURE</span>
+              <span class="project-index">SYS // 02 — AI SECURITY FIREWALL</span>
+              <div class="project-badges">
+                <span class="badge-live">Live Gateway</span>
+                <span class="project-tag">Zero-Trust DLP</span>
+              </div>
+            </div>
+            <a class="project-title-link" href="https://zero-trust-ai-gateway-frontend.vercel.app/" target="_blank" rel="noopener">
+              <h3 class="project-title">Zero-Trust AI Security Gateway</h3>
+              <span class="project-arrow" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+              </span>
+            </a>
+            <p class="project-desc">A transparent reverse-proxy security middleware sitting between enterprise applications and Large Language Models. Enforces real-time Data Loss Prevention (DLP) to scrub sensitive PII (emails, credit cards, keys) and blocks adversarial prompt-injection payloads via heuristic threat scoring before routing sanitized requests to Groq LLM inference, complete with a live SQLite threat-telemetry console.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span>FastAPI</span><span>DLP &amp; Prompt Firewall</span><span>Groq LLM</span><span>SQLite Telemetry</span><span>Vercel</span>
+            </div>
+            <a href="https://zero-trust-ai-gateway-frontend.vercel.app/" target="_blank" rel="noopener" class="project-action-label">Launch Security Console →</a>
+          </div>
+        </article>
+
+        <!-- 03: LIVE DEPLOYMENT - LEGACY TO CLOUD MIDDLEWARE -->
+        <article class="project-card spotlight-card">
+          <div>
+            <div class="project-meta-row">
+              <span class="project-index">SYS // 03 — CLOUD INFRASTRUCTURE</span>
               <div class="project-badges">
                 <span class="badge-live">Live Production</span>
                 <span class="project-tag">LLM Middleware</span>
@@ -1169,11 +1193,11 @@
           </div>
         </article>
 
-        <!-- 03: LIVE DEPLOYMENT - DOCUMENT INTELLIGENCE API -->
+        <!-- 04: LIVE DEPLOYMENT - DOCUMENT INTELLIGENCE API -->
         <article class="project-card spotlight-card">
           <div>
             <div class="project-meta-row">
-              <span class="project-index">SYS // 03 — ASYNC EXTRACTION</span>
+              <span class="project-index">SYS // 04 — ASYNC EXTRACTION</span>
               <div class="project-badges">
                 <span class="badge-live">Live API</span>
                 <span class="project-tag">Document AI</span>
@@ -1195,11 +1219,11 @@
           </div>
         </article>
 
-        <!-- 04: LIVE DEPLOYMENT - CUSTOMER CHURN & LTV ENGINE -->
+        <!-- 05: LIVE DEPLOYMENT - CUSTOMER CHURN & LTV ENGINE -->
         <article class="project-card spotlight-card">
           <div>
             <div class="project-meta-row">
-              <span class="project-index">SYS // 04 — DECISION INTELLIGENCE</span>
+              <span class="project-index">SYS // 05 — DECISION INTELLIGENCE</span>
               <div class="project-badges">
                 <span class="badge-live">Live Engine</span>
                 <span class="project-tag">Counterfactual XAI</span>
@@ -1221,11 +1245,11 @@
           </div>
         </article>
 
-        <!-- 05: AUTONOMOUS DEVSECOPS FLEET -->
+        <!-- 06: AUTONOMOUS DEVSECOPS FLEET -->
         <article class="project-card spotlight-card">
           <div>
             <div class="project-meta-row">
-              <span class="project-index">SYS // 05 — MULTI-AGENT SYSTEM</span>
+              <span class="project-index">SYS // 06 — MULTI-AGENT SYSTEM</span>
               <div class="project-badges">
                 <span class="project-tag">5-Agent Fleet</span>
               </div>
@@ -1246,69 +1270,78 @@
           </div>
         </article>
 
-        <!-- 06: FORGE PWA -->
-        <article class="project-card span-4 spotlight-card">
+        <!-- 07: FORGE PWA -->
+        <article class="project-card spotlight-card">
           <div>
             <div class="project-meta-row">
-              <span class="project-index">SYS // 06</span>
-              <span class="project-tag">Local-First PWA</span>
+              <span class="project-index">SYS // 07 — LOCAL-FIRST ARCHITECTURE</span>
+              <div class="project-badges">
+                <span class="project-tag">Offline-First PWA</span>
+              </div>
             </div>
             <a class="project-title-link" href="https://github.com/farhanabhi" target="_blank" rel="noopener">
-              <h3 class="project-title">FORGE</h3>
+              <h3 class="project-title">FORGE — Telemetry &amp; Nutrition PWA</h3>
               <span class="project-arrow" aria-hidden="true">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
               </span>
             </a>
-            <p class="project-desc">An offline-first strength training and nutrition telemetry app running entirely inside IndexedDB with zero cloud latency, backed by a 600+ item South Indian &amp; Kerala macro database.</p>
+            <p class="project-desc">An offline-first strength training and nutrition telemetry application operating entirely inside client-side IndexedDB with zero cloud latency, backed by a custom 600+ item South Indian and Kerala nutritional macro database.</p>
           </div>
           <div class="project-footer">
             <div class="project-stack">
-              <span>IndexedDB</span><span>Service Workers</span><span>PWA</span>
+              <span>IndexedDB</span><span>Service Workers</span><span>PWA</span><span>Zero-Latency Storage</span>
             </div>
+            <a href="https://github.com/farhanabhi" target="_blank" rel="noopener" class="project-action-label">Inspect Codebase →</a>
           </div>
         </article>
 
-        <!-- 07: HEALTHCARE XAI -->
-        <article class="project-card span-4 spotlight-card">
+        <!-- 08: HEALTHCARE XAI -->
+        <article class="project-card spotlight-card">
           <div>
             <div class="project-meta-row">
-              <span class="project-index">SYS // 07</span>
-              <span class="project-tag">87% Accuracy · XAI</span>
+              <span class="project-index">SYS // 08 — CLINICAL DECISION SUPPORT</span>
+              <div class="project-badges">
+                <span class="project-tag">87% Accuracy · XAI</span>
+              </div>
             </div>
             <a class="project-title-link" href="https://github.com/farhanabhi/Healthcare-Recomendation-system" target="_blank" rel="noopener">
-              <h3 class="project-title">Clinical Triage &amp; XAI Engine</h3>
+              <h3 class="project-title">Clinical Triage &amp; SHAP XAI Engine</h3>
               <span class="project-arrow" aria-hidden="true">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
               </span>
             </a>
-            <p class="project-desc">Predicts probable clinical conditions from patient-reported symptom vectors via Random Forest ensembles, pairing every diagnostic output with transparent SHAP waterfall explanations.</p>
+            <p class="project-desc">Predicts probable clinical conditions from patient-reported symptom vectors via Random Forest ensembles, pairing every diagnostic output with transparent SHAP waterfall explanations for clinical auditability.</p>
           </div>
           <div class="project-footer">
             <div class="project-stack">
-              <span>Random Forest</span><span>SHAP</span><span>Scikit-learn</span>
+              <span>Random Forest</span><span>SHAP</span><span>Scikit-learn</span><span>Explainable AI</span>
             </div>
+            <a href="https://github.com/farhanabhi/Healthcare-Recomendation-system" target="_blank" rel="noopener" class="project-action-label">Inspect Repository →</a>
           </div>
         </article>
 
-        <!-- 08: AI BUSINESS ANALYST -->
-        <article class="project-card span-4 spotlight-card">
+        <!-- 09 & 10: AI BUSINESS ANALYST & NLP CAREER SUITE -->
+        <article class="project-card spotlight-card">
           <div>
             <div class="project-meta-row">
-              <span class="project-index">SYS // 08</span>
-              <span class="project-tag">Automated BI</span>
+              <span class="project-index">SYS // 09 &amp; 10 — ENTERPRISE ANALYTICS</span>
+              <div class="project-badges">
+                <span class="project-tag">ML &amp; NLP Pipelines</span>
+              </div>
             </div>
             <a class="project-title-link" href="https://github.com/farhanabhi/AI-powered-data-and-business-analysis-system" target="_blank" rel="noopener">
-              <h3 class="project-title">Automated KPI &amp; BI Pipeline</h3>
+              <h3 class="project-title">Automated KPI &amp; Career Intelligence Suite</h3>
               <span class="project-arrow" aria-hidden="true">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
               </span>
             </a>
-            <p class="project-desc">An automated executive analytics pipeline and NLP career intelligence suite that ingests raw corporate tables, detects variance anomalies, and synthesizes strategic KPI briefs.</p>
+            <p class="project-desc">An automated executive analytics pipeline that ingests corporate tables to synthesize strategic KPI briefs, paired with an NLP-driven career intelligence engine that maps candidate skill vectors against live market demand.</p>
           </div>
           <div class="project-footer">
             <div class="project-stack">
-              <span>Python</span><span>Automated EDA</span><span>NLP</span>
+              <span>Python</span><span>Automated EDA</span><span>NLP</span><span>KPI Forecasting</span>
             </div>
+            <a href="https://github.com/farhanabhi/AI-powered-data-and-business-analysis-system" target="_blank" rel="noopener" class="project-action-label">Inspect Repository →</a>
           </div>
         </article>
 
@@ -1390,7 +1423,7 @@
 
     <div class="ticker-wrap reveal">
       <div class="ticker-track" id="tickerTrack">
-        <span>Python</span><span>PyTorch Geometric</span><span>FastAPI</span><span>Graph Neural Networks</span><span>SHAP &amp; Counterfactual XAI</span><span>Groq LLM Inference</span><span>Tesseract OCR</span><span>PostgreSQL</span><span>Docker</span><span>AWS &amp; Azure</span>
+        <span>Python</span><span>PyTorch Geometric</span><span>FastAPI</span><span>Zero-Trust AI Security</span><span>Graph Neural Networks</span><span>SHAP &amp; Counterfactual XAI</span><span>Groq LLM Inference</span><span>Tesseract OCR</span><span>PostgreSQL</span><span>Docker</span><span>AWS &amp; Azure</span>
       </div>
     </div>
 
@@ -1403,15 +1436,15 @@
           </div>
         </div>
         <div class="skill-group spotlight-card">
-          <h3>Backend, APIs &amp; Autonomous Systems</h3>
+          <h3>AI Security, Backend &amp; Autonomous Systems</h3>
           <div class="skill-chips">
-            <span>Python</span><span>FastAPI</span><span>Asyncio</span><span>Multi-Agent Pipelines</span><span>Ollama</span><span>Groq API</span><span>Tesseract OCR</span><span>REST &amp; Webhook Middleware</span><span>Flask</span><span>Django</span>
+            <span>Python</span><span>FastAPI</span><span>Zero-Trust AI Gateways</span><span>DLP &amp; PII Redaction</span><span>Prompt-Injection Firewalls</span><span>Asyncio</span><span>Multi-Agent Pipelines</span><span>Ollama</span><span>Groq API</span><span>Tesseract OCR</span>
           </div>
         </div>
         <div class="skill-group spotlight-card">
           <h3>Data Engineering &amp; Analytics</h3>
           <div class="skill-chips">
-            <span>PostgreSQL</span><span>Supabase</span><span>MySQL</span><span>MongoDB</span><span>IndexedDB</span><span>Pandas</span><span>Qlik Sense</span><span>Power BI</span><span>Tableau</span>
+            <span>PostgreSQL</span><span>Supabase</span><span>SQLite</span><span>MySQL</span><span>MongoDB</span><span>IndexedDB</span><span>Pandas</span><span>Qlik Sense</span><span>Power BI</span><span>Tableau</span>
           </div>
         </div>
         <div class="skill-group spotlight-card">
